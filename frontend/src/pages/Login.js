@@ -19,7 +19,7 @@ const Login = () => {
     setError(null); // Clear previous errors
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const res = await axios.post("https://collaborative-learning-platform.onrender.com/api/auth/login", formData);
       console.log("Login Success:", res.data);
 
       // Save token in localStorage (so user stays logged in)

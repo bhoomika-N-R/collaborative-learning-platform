@@ -283,7 +283,7 @@ const Dashboard = () => {
   const userId = 1;
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/users/${userId}`)
+    axios.get(`https://collaborative-learning-platform.onrender.com/api/users/${userId}`)
       .then((res) => setUser(res.data))
       .catch((err) => console.error("❌ API Error:", err));
   }, []);
